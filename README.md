@@ -1,7 +1,3 @@
-# cloud-hosting-project
-Cloud Hosting Project created by Next.JS for educational purpose
-
-<img src="./public/course-nextjs.png">
 
 # Usage
 - Install Postgresql DB on your local machine or use Postgresql from remote server
