@@ -7,7 +7,7 @@ const Hero = () => {
     <div className={styles.hero}>
       <div className={styles.heroLeft}>
         <h1 className={styles.title}>
-          <span className={styles.lider}>Lider</span>{" "}
+          <span className={styles.lider}>Lider</span>
           <span className={styles.biligi}>Bilgisayar</span>
         </h1>
         <p className={styles.desc}>

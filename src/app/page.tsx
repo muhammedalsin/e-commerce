@@ -1,5 +1,5 @@
 import Hero from "@/components/home/Hero";
-import WebHostingPlan from "@/components/home/WebHostingPlan";
+// import WebHostingPlan from "@/components/home/WebHostingPlan";
 
 const HomePage = () => {
   return (
