@@ -16,9 +16,9 @@ const RegisterForm = () => {
 
     const formSubmitHandler = async (e:React.FormEvent) => {
         e.preventDefault();
-        if(username === "") return toast.error("Username is required");
-        if(email === "") return toast.error("Email is required");
-        if(password === "") return toast.error("Password is required");
+        if(username === "") return toast.error("Kullanıcı adı gereklidir");
+        if(email === "") return toast.error("E-posta gereklidir");
+        if(password === "") return toast.error("Şifre gereklidir");
 
         try {
             setLoading(true);
@@ -38,14 +38,14 @@ const RegisterForm = () => {
             <input 
              className="mb-4 border rounded p-2 text-xl" 
              type="text" 
-             placeholder="Enter Your Username"
+             placeholder="Kullanıcı Adınızı Girin"
              value={username}
              onChange={(e) => setUsername(e.target.value)}
             />
             <input 
              className="mb-4 border rounded p-2 text-xl" 
              type="email" 
-             placeholder="Enter Your Email"
+             placeholder="E-posta Adresinizi Girin"
              value={email}
              onChange={(e) => setEmail(e.target.value)}
             />
@@ -57,7 +57,7 @@ const RegisterForm = () => {
              onChange={(e) => setPassword(e.target.value)}
             />
             <button disabled={loading} type="submit" className="text-2xl text-white bg-blue-800 p-2 rounded-lg font-bold">
-                {loading ? <ButtonSpinner /> : "Register"}
+                {loading ? <ButtonSpinner /> : "Kayıt Ol"}
             </button>
         </form>
     )

@@ -20,8 +20,12 @@
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    color: rgb(176, 15, 176);
+    color: #312d4e;
 }
+.logotitle {
+    color: #294d9d;
+}
+
 
 .menu {
     font-size: 40px;

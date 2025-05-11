@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
         const user = await prisma.user.findUnique({ where: { email: body.email } });
         if (!user) {
             return NextResponse.json(
-                { message: 'invalid email or password' },
+                { message: 'Geçersiz e-posta veya şifre' },
                 { status: 400 }
             )
         }
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         const isPasswordMatch = await bcrypt.compare(body.password, user.password);
         if (!isPasswordMatch) {
             return NextResponse.json(
-                { message: 'invalid email or password' },
+                { message: 'Geçersiz e-posta veya şifre' },
                 { status: 400 }
             );
         }

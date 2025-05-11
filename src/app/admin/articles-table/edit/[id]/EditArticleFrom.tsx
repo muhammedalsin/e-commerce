@@ -17,8 +17,8 @@ const EditArticleForm = ({ article } : EditArticleFormProps) => {
 
     const formSubmitHandler = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (title === "") return toast.error("Title is required");
-        if (description === "") return toast.error("Description is required");
+        if (title === "") return toast.error("Başlık gerekli");
+        if (description === "") return toast.error("Açıklama gerekli");
 
         try {
             await axios.put(`${DOMAIN}/api/articles/${article.id}`, { title, description });

@@ -15,7 +15,7 @@ const LoginForm = () => {
 
     const formSubmitHandler = async (e:React.FormEvent) => {
         e.preventDefault();
-        if(email === "") return toast.error("Email is required");
+        if(email === "") return toast.error("E-posta gereklidir");
         if(password === "") return toast.error("Password is required");
 
         try {

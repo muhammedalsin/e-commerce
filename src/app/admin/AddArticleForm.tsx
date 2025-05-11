@@ -12,14 +12,14 @@ const AddArticleForm = () => {
 
     const formSubmitHandler = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (title === "") return toast.error("Title is required");
-        if (description === "") return toast.error("Description is required");
+        if (title === "") return toast.error("Başlık gerekli");
+        if (description === "") return toast.error("Açıklama gerekli");
 
         try {
             await axios.post(`${DOMAIN}/api/articles`, { title, description });
             setTitle("");
             setDescription("");
-            toast.success("New article added");
+            toast.success("Yeni ürün eklendi");
             router.refresh();
         } catch (error:any) {
             toast.error(error?.response?.data.message);
@@ -32,14 +32,14 @@ const AddArticleForm = () => {
             <input
                 className="mb-4 border rounded p-2 text-xl"
                 type="text"
-                placeholder="Enter Article Title"
+                placeholder="Ürün Başlığı Girin"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
             <textarea
                 className='mb-4 p-2 lg:text-xl rounded resize-none'
                 rows={5}
-                placeholder='Enter Artilce Description'
+                placeholder='Ürün Açıklamasını Girin'
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
             ></textarea>

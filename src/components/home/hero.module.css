@@ -1,5 +1,5 @@
 .hero {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 150px);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -10,9 +10,14 @@
 .title {
     font-size: 44px;
     font-weight: bold;
-    color: black;
+    /* color: black; */
 }
-
+.lider{
+  color: #312d4e;
+}
+.biligi{
+  color: #294d9d;
+}
 .desc {
     font-size: 21px;
 }

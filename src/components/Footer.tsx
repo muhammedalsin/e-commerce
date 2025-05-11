@@ -1,13 +1,12 @@
-
 const Footer = () => {
   return (
-    <div 
-     style={{height: '50px'}} 
-     className='flex items-center justify-center text-white bg-gray-700'
+    <div
+      style={{ height: "50px" }}
+      className="flex items-center justify-center text-white bg-gray-700"
     >
-        Copyright 2024 Cloud Hosting
+      Copyright 2025 Muhammed Alsin
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
