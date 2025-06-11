@@ -111,8 +111,8 @@ const AboutPage = () => {
               <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-stretch">
                 {/* FORM */}
                 <form
-                  method="post"
-                  action="mailto:muhammedpay10@gmail.com"
+                  action="https://formspree.io/f/xoqgegdp"
+                  method="POST"
                   className="space-y-5 bg-gray-50 p-8 rounded-xl shadow-lg h-full"
                 >
                   <h2 className="text-2xl font-bold text-blue-700 mb-4">
