@@ -40,7 +40,7 @@ const AddCommentForm = ({ articleId }: AddCommentFormProps) => {
         type="submit"
         className="bg-blue-700 text-white mt-2 p-1 w-min text-xl rounded-lg hover:bg-blue-900 transition"
       >
-        Comment
+        Yorum
       </button>
     </form>
   );

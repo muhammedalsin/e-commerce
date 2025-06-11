@@ -18,7 +18,7 @@ const SearchArticleInput = () => {
             <input 
              className="w-full p-3 rounded text-xl border-none text-gray-900" 
              type="search" 
-             placeholder="Search for article"
+             placeholder="Arama Yapın..."
              value={searchText}
              onChange={(e) => setSearchText(e.target.value)}
             />

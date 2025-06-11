@@ -17,7 +17,7 @@ const Pagination = ({ pageNumber, pages, route }: PaginationProps) => {
     <div className='flex items-center justify-center mt-2 mb-10'>
       {pageNumber !== 1 && (
         <Link href={`${route}?pageNumber=${prev}`} className="border border-gray-700 text-gray-700 py-1 px-3 font-bold text-xl cursor-pointer hover:bg-gray-200 transition">
-          Prev
+          Önceki
         </Link>
       )}
       {pagesArray.map(page => (
@@ -27,7 +27,7 @@ const Pagination = ({ pageNumber, pages, route }: PaginationProps) => {
       ))}
       {pageNumber !== pages && (
         <Link href={`${route}?pageNumber=${next}`} className="border border-gray-700 text-gray-700 py-1 px-3 font-bold text-xl cursor-pointer hover:bg-gray-200 transition">
-          Next
+          Sonraki
         </Link>
       )}
     </div>

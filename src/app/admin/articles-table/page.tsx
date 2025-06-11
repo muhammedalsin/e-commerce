@@ -49,7 +49,7 @@ const AdminArticlesTable = async ({ searchParams: { pageNumber } }: AdminArticle
                   href={`/articles/${article.id}`}
                   className="text-white bg-blue-600 rounded-lg p-2 hover:bg-blue-800"
                 >
-                  Read More
+                  Devamını Oku
                 </Link>
               </td>
             </tr>

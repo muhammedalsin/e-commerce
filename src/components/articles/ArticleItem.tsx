@@ -15,7 +15,7 @@ const ArticleItem = ({ article }: ArticleItemProps) => {
         {article.description}
       </p>
       <Link className="text-xl bg-blue-700 hover:bg-blue-800 w-full block text-center p-1 text-white rounded-lg" href={`/articles/${article.id}`}>
-        Read More
+        Devamını Oku
       </Link>
     </div>
   )
