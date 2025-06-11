@@ -1,4 +1,11 @@
-import { Laptop, ShieldCheck, Truck, Star, MonitorSmartphone, BadgeCheck } from "lucide-react";
+import {
+  Laptop,
+  ShieldCheck,
+  Truck,
+  Star,
+  MonitorSmartphone,
+  BadgeCheck,
+} from "lucide-react";
 
 const AboutPage = () => {
   return (
@@ -89,6 +96,84 @@ const AboutPage = () => {
               <li>Detaylı ürün açıklamaları ve uygun fiyatlar</li>
               <li>7 gün iade garantisi</li>
             </ul>
+          </div>
+
+          {/* İletişim Formu */}
+          <div className="bg-white p-8 rounded-2xl shadow-md border">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+              Bizimle İletişime Geçin
+            </h2>
+            <p className="text-gray-600 mb-6 text-center">
+              Her türlü soru, görüş veya öneriniz için aşağıdaki formu
+              doldurabilirsiniz.
+            </p>
+            <div className="bg-white py-16 px-6 md:px-20">
+              <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-stretch">
+                {/* FORM */}
+                <form
+                  method="post"
+                  action="mailto:muhammedpay10@gmail.com"
+                  className="space-y-5 bg-gray-50 p-8 rounded-xl shadow-lg h-full"
+                >
+                  <h2 className="text-2xl font-bold text-blue-700 mb-4">
+                    Bize Ulaşın
+                  </h2>
+
+                  <div>
+                    <label className="block text-gray-700 mb-1">Adınız</label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Adınızı girin"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-gray-700 mb-1">E-posta</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="E-posta adresinizi girin"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-gray-700 mb-1">
+                      Mesajınız
+                    </label>
+                    <textarea
+                      name="message"
+                      required
+                      placeholder="Mesajınızı yazın"
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+                  >
+                    Gönder
+                  </button>
+                </form>
+
+                {/* HARİTA */}
+                <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[550px]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5198043.663770883!2d44.09858996537961!3d41.293835171259616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877004824520b%3A0xf3bc3e0a41d6bc05!2zTMSwREVSIELEsExHxLBTQVlBUiBNQcSeQVpBU0k!5e0!3m2!1sar!2str!4v1749635773055!5m2!1sar!2str"
+                    className="w-full h-full"
+                    style={{ border: "0" }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lider Bilgisayar Mağazası"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
