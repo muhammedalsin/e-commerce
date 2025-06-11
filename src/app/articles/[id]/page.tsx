@@ -55,12 +55,12 @@ const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
                     <AddCommentForm articleId={article.id} />
                 ) : (
                     <p className="text-blue-600 md:text-xl">
-                        to write a comment you should log in first
+                        yorum yazmak için önce giriş yapmalısınız
                     </p>
                 )}
             </div>
             <h4 className="text-xl text-gray-800 ps-1 font-semibold mb-2 mt-7">
-                Comments
+                Yorumlar
             </h4>
             {article.comments.map(comment => (
                 <CommentItem key={comment.id} comment={comment} userId={payload?.id} />
