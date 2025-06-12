@@ -44,7 +44,7 @@ const AddArticleForm = () => {
                 onChange={(e) => setDescription(e.target.value)}
             ></textarea>
             <button type="submit" className="text-2xl text-white bg-blue-700 hover:bg-blue-900 p-2 rounded-lg font-bold">
-                Add
+                Ekle
             </button>
         </form>
     )

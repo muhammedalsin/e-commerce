@@ -18,13 +18,13 @@ const AdminArticlesTable = async ({ searchParams: { pageNumber } }: AdminArticle
 
   return (
     <section className="p-5">
-      <h1 className="mb-7 text-2xl font-semibold text-gray-700">Articles</h1>
+      <h1 className="mb-7 text-2xl font-semibold text-gray-700">Ürünler</h1>
       <table className="table w-full text-left">
         <thead className="border-t-2 border-b-2 border-gray-500 lg:text-xl">
           <tr>
-            <th className="p-1 lg:p-2">Title</th>
-            <th className="hidden lg:inline-block lg:p-2">Created At</th>
-            <th>Actions</th>
+            <th className="p-1 lg:p-2">Başlık</th>
+            <th className="hidden lg:inline-block lg:p-2">Oluşturuldu</th>
+            <th>Eylemler</th>
             <th className="hidden lg:inline-block"></th>
           </tr>
         </thead>
@@ -40,7 +40,7 @@ const AdminArticlesTable = async ({ searchParams: { pageNumber } }: AdminArticle
                   href={`/admin/articles-table/edit/${article.id}`}
                   className="bg-green-600 text-white rounded-lg py-1 px-2 inline-block text-center mb-2 me-2 lg:me-3 hover:bg-green-800 transition"
                 >
-                  Edit
+                  Düzenlemek
                 </Link>
                 <DeleteArticleButton articleId={article.id} />
               </td>
