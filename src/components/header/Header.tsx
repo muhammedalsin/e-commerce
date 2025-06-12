@@ -22,8 +22,8 @@ const Header = () => {
           </>
         ) : (
           <>
-            <Link className={styles.btn} href="/login">Kayıt Ol</Link>
-            <Link className={styles.btn} href="/register">Giriş Yap</Link>
+            <Link className={styles.btn} href="/login">Giriş Yap</Link>
+            <Link className={styles.btn} href="/register">Kayıt Ol</Link>
           </>
         )}
       </div>
