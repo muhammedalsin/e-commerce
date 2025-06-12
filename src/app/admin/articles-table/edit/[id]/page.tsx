@@ -14,7 +14,7 @@ const EditArticlePage = async ({ params } : EditArticlePageProps) => {
     <section className='fix-height flex items-center justify-center px-5 lg:px-20'>
       <div className='shadow p-4 bg-blue-200 rounded w-full'>
         <h2 className='text-2xl text-green-700 font-semibold mb-4'>
-            Edit Article
+            Ürünü Düzenle
         </h2>
         <EditArticleForm article={article} />
       </div>

@@ -29,7 +29,7 @@ const DeleteCommentButton = ({ commentId }: DeleteCommentButtonProps) => {
       onClick={deleteCommentHandler}
       className="bg-red-600 text-white rounded-lg inline-block py-1 px-2 cursor-pointer hover:bg-red-800 transition"
     >
-      Delete
+      Sil
     </div>
   )
 }

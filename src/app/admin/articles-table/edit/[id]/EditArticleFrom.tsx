@@ -22,7 +22,7 @@ const EditArticleForm = ({ article } : EditArticleFormProps) => {
 
         try {
             await axios.put(`${DOMAIN}/api/articles/${article.id}`, { title, description });
-            toast.success("article updated");
+            toast.success("Ürün güncellendi");
             router.refresh();
         } catch (error:any) {
             toast.error(error?.response?.data.message);
@@ -45,7 +45,7 @@ const EditArticleForm = ({ article } : EditArticleFormProps) => {
                 onChange={(e) => setDescription(e.target.value)}
             ></textarea>
             <button type="submit" className="text-2xl text-white bg-green-700 hover:bg-green-900 p-2 rounded-lg font-bold">
-                Edit
+                Güncelle
             </button>
         </form>
     )
